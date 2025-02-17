@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <meta name="description"
+        content="contact us to learn more about our initiative, how to get involved, or how to support us.">
+    <link rel="stylesheet" href="./assets/css/root.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="https://kit.fontawesome.com/d35f779ce5.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="./assets/img/top-logo.png" alt="One Million Lines">
+                </a>
+            </div>
+            <div class="navigation">
+                <a href="team.html">who we are</a>
+                <a href="">get involved</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="hero-contact">
+            <div class="hero-box-contact">
+                <div class="hero-title-contact">
+                    <h1>Contact Us !</h1>
+                </div>
+                <div class="hero-subtitle-contact">
+                    <p>Contact us to be a part of our initiative : wether as a student, an educator or a sponsor.</p>
+                </div>
+                <div class="hero-button-contact">
+                    <button>Learn more >></button>
+                    <img src="./assets/img/code.png" alt="" class="code">
+                </div>
+            </div>
+        </section>
+        <section class="contact">
+            <div class="box-title">
+                <h2>get involved</h2>
+                <hr class="title">
+            </div>
+            <form class="d-flex flex-column g-3 w-100 justify-content-center align-items-center" action=""
+                method="POST">
+                <div class="col-md-4 d-flex flex-column justify-content-center align-items-center">
+                    <label for="prenom" class="form-label">Votre prénom</label>
+                    <input type="text" class="form-control" id="prenom" value="Mark" name="prenom"
+                        placeholder="Alexandre" required>
+                    <div class="invalid-prenom d-none alert alert-danger mt-2">
+                        Votre prénom doit contenir au moins 2 caractères
+                    </div>
+                </div>
+                <div class="col-md-4 d-flex flex-column justify-content-center align-items-center">
+                    <label for="nom" class="form-label">Votre nom</label>
+                    <input type="text" class="form-control" id="nom" name="nom" value="Otto" placeholder="Graziani"
+                        required>
+                    <div class="invalid-nom d-none alert alert-danger mt-2">
+                        Votre nom doit contenir au moins 2 caractères
+                    </div>
+                </div>
+                <div class="col-md-4 d-flex flex-column justify-content-center align-items-center">
+                    <label for="contactRaison" class="form-label">Why are you contacting us ?</label>
+                    <select class="form-select" id="contactRaison" name="contactRaison" required>
+                        <option selected value="">-- Select an option --</option>
+                        <option value="">I want to be an educator</option>
+                        <option value="">I want to be a sponsor</option>
+                        <option value="">I want to be a student</option>
+                    </select>
+                    <div class="invalid-select d-none alert alert-danger mt-2">
+                        Please select a valid Reason.
+                    </div>
+                </div>
+                <div class="col-md-4 d-flex flex-column justify-content-center align-items-center">
+                    <label for="email" class="form-label">Votre Adresse Mail</label>
+                    <input type="email" class="form-control" id="email" name="email" value=""
+                        placeholder="name@example.com" required>
+                    <div class="invalid-email d-none alert alert-danger mt-2">
+                        Votre mail doit être valide
+                    </div>
+                </div>
+                <div class="col-md-4 d-flex flex-column justify-content-center align-items-center">
+                    <label for="message" class="form-label">Votre message</label>
+                    <textarea class="form-control" id="message" name="message" rows="10" required></textarea>
+                    <div class="invalid-message d-none alert alert-danger mt-2">
+                        Votre message doit contenir au moins 50 caractères
+                    </div>
+                </div>
+                <div class="col-md-12 d-flex flex-column justify-content-center align-items-center">
+                    <button type="submit">S'inscrire</button>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <div class="logo-support">
+            <img src="./assets/img/one-million-bottom-brand.png" alt="">
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+    <script src="./assets/js/form.js"></script>
+</body>
+
+</html>
