@@ -7,7 +7,7 @@ function changeImage() {
     cardTeam.forEach((card, index) => {
         card.addEventListener("mouseover", () => {
             card.style.background = `url(${imageArray[index]})`;
-            card.style.backgroundSize = "cover";
+            card.style.backgroundSize = "100%";
             card.style.backgroundPosition = "100% 100%";
             card.style.backgroundRepeat = "no-repeat";
             card.style.transition = "all 1s ease-in-out";
